@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Danilo Arroio Oliveira</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+    <header>
+        <h1>Danilo Arroio Oliveira</h1>
+        <p>Estudante de Sistemas de Informação</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Olá, seja bem-vindo!</h2>
+            <p>Meu nome é <strong th:text="${nome}">Danilo Arroio Oliveira</strong>.</p>
+            <p th:text="${descricao}">Sou estudante e estou aprendendo desenvolvimento web.</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou estudante do curso de
+                <strong th:text="${curso}">Sistemas de Informação</strong>.
+            </p>
+            <p>
+                Tenho interesse em programação, tecnologia e desenvolvimento
+                de sistemas. Estou desenvolvendo meus conhecimentos em Java,
+                HTML, CSS e banco de dados.
+            </p>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus projetos</h2>
+
+            <div class="projeto">
+                <h3>Projeto acadêmico</h3>
+                <p>
+                    Desenvolvimento de aplicações para praticar
+                    programação e lógica computacional.
+                </p>
+            </div>
+
+            <div class="projeto">
+                <h3>Portfólio pessoal</h3>
+                <p>
+                    Site criado com Java, Spring Boot, Thymeleaf,
+                    HTML e CSS.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Danilo Arroio Oliveira</p>
+    </footer>
+
+</body>
+</html>
